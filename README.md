@@ -11,7 +11,47 @@ Just [jsonfile](https://www.npmjs.com/package/jsonfile), for saving the output o
 
 # How to use it
 
-Take a look to [index.js](https://github.com/ntkog/codemotion2017_talks/blob/master/index.js)
+Take a look to [index.js](https://github.com/ntkog/codemotion2017_talks/blob/master/index.js) and [nlp.js](https://github.com/ntkog/codemotion2017_talks/blob/master/nlp.js) .
+
+You have a good start point to play with the data.
+
+# Examples
+
+Get all Talks without filters
+
+```js
+const Listing = require('./lib/listing');
+let allTalks = Listing.allTalks();
+```
+
+Get a list of talks based on *topic* (Programming Language)
+
+```js
+const Listing = require('./lib/listing');
+let jsTalks = Listing.allTalks({ topic : "javascript"});
+
+```
+
+Filter talks by gender speakers ("men", "women", "mix")
+
+```js
+const Listing = require('./lib/listing');
+let allTalks = Listing.allTalks({ topic : "javascript"}).filter(byGender("women"));
+```
+
+Add your own filters to talks descriptions  ( for further NLP analysis)
+
+```js
+const Listing = require('./lib/listing');
+let stopwords = ["from","to", "by"];
+function myOwnFilter (str) {
+  return cad.toLowerCase().split(/\s+/).filter((str) => !stopwords.includes(str)).join(" ");
+}
+let allTalks = Listing.allTalks({
+  topic : "javascript",
+  descFilterCb : [myOwnFilter]
+}).filter(byGender("women"));
+```
 
 # TODO
 Playing with NLP
