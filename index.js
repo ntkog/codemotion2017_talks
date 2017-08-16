@@ -4,9 +4,16 @@ const jsonfile = require('jsonfile');
 // Módulo que abstrae la lógica de consolidación de los datos
 const Listing = require('./lib/listing');
 
+function myOwnFilter (desc) {
+  let res = desc.replace(/[aeiou]/g, "");
+  return res;
+}
 
 let RESULTS_FILENAME = `nlp.json`;
-let allTalks = Listing.allTalks({ topic : "jvm"}).filter(byGender());
+let allTalks = Listing.allTalks({
+   topic : "jvm",
+   descFilterCb : myOwnFilter
+ }).filter(byGender());
 console.log(Listing.defaults);
 
 function byGender (gender = "mix") {

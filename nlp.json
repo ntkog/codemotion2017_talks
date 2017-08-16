@@ -1,0 +1,125 @@
+[
+  {
+    "talkId": "5146610086445056",
+    "title": "Streaming Data : ni pierdas el tren, ni esperes en balde",
+    "description": "* ¿ detectar operaciones bancarias fraudulentas ? * ¿ hora sufren trenes retraso debo solucionarlo mínimo coste? * ¿ propongo usuario acaba cesta compra gafas esquí : calcetines pantalones ? * ¿ debería escribir publicar artículo leído máximo personas ? preguntas respuesta forma relativamente sencilla gracias emergencia tecnologías análisis, predicción, streaming datos, contenedores, orquestradores cloud. ¡crear flujo datos real, analizarlo ponerlo producción fácil! sesión, habrá teoría, live coding demos, aprenderás bases arquitectura streaming datos, casos usos frameworks open-source disponibles rendimiento, robustez, escalabilidad. ¡el lunes volverás ganas más, prometido ! ",
+    "authors": [
+      {
+        "id": 33724002,
+        "uuid": "katiaaresti",
+        "name": "Katia Aresti",
+        "avatar": "https://storage.googleapis.com/k-avatars/33724002-0ba7833b",
+        "description": "Red Hat, Duchess France, Infinispan/JBoss DataGrid core developer",
+        "feedback": {
+          "ratingAverage": 4.88,
+          "entriesCount": 58
+        },
+        "gender": "Female"
+      },
+      {
+        "id": 40114001,
+        "uuid": "galder",
+        "name": "Galder Zamarreño",
+        "avatar": "https://storage.googleapis.com/k-avatars/40114001-172645e4",
+        "description": "Red Hat, Infinispan/JBoss DataGrid Co-creator and  core developer ",
+        "feedback": {
+          "ratingAverage": 0,
+          "entriesCount": 0
+        },
+        "gender": "Male"
+      }
+    ],
+    "tags": [
+      "JAVA and JVM languages",
+      "Other"
+    ],
+    "likes": 7,
+    "authorsGender": "mix"
+  },
+  {
+    "talkId": "6327088021766144",
+    "title": "From Monolith to Microservices using Domain Driven Design",
+    "description": "** description ** agile practices techniques continuous delivery react rapidly, putting practice big monolith application difficult. microservices offer solution. maría gómez jorge agudo show interactive session move monolith microservices applying _domain driven design_ principles engaging exercises. ** abstract ** agile practices techniques continuous delivery evolutionary architecture react rapidly. however, putting practice big legacy monolith application difficult job, industry ideas solve problem. microservices, pushed companies netflix amazon, latest solution problem. architecture based services offers advantages (like scalability technical flexibility), upfront costs complexity companies position pay. maría gómez jorge agudo explore prerequisites moving microservices architecture provide tips achieve engaging exercises. topics include: * continuous delivery readiness * continuously building, testing, deploying microservices autonomously * testing microservices ensuring break dependent systems * operational concerns **learn to** * assess microservice architecture organisation * establish prerequisites moving microservices, including testing, automation, continuous delivery * identify decouple contexts _domain driven design_ refactoring techniques * extract microservices monolith",
+    "authors": [
+      {
+        "id": 111554001,
+        "uuid": "jagudo",
+        "name": "Jorge Agudo",
+        "avatar": "https://storage.googleapis.com/k-avatars/111554001-0da9d238",
+        "description": "Jorge Agudo is a Tech Lead at ThoughtWorks in Barcelona. He loves to develop software as much as the human side of technology. He has worked for the last ten years bringing the best value from his passion to clients in different industries, like insurance, utilities or public sector.",
+        "feedback": {
+          "ratingAverage": 0,
+          "entriesCount": 0
+        },
+        "gender": "Male"
+      },
+      {
+        "id": 112354001,
+        "uuid": "mariagomezaguirre",
+        "name": "Maria Gomez",
+        "avatar": "https://storage.googleapis.com/k-avatars/112354001-7d824d89",
+        "description": "Maria Gomez is a Market Tech Principal at ThoughtWorks in Barcelona. She’s been a developer and an architect for over 9 years. She has worked with many different technologies and domains, which has helped her lead teams and advise stakeholders in making the right technology decisions. She is also a speaker and an advocate for diversity and inclusion in the IT industry.",
+        "feedback": {
+          "ratingAverage": 0,
+          "entriesCount": 0
+        },
+        "twitterAccount": "mariascandella",
+        "gender": "Female"
+      }
+    ],
+    "tags": [
+      "JAVA and JVM languages"
+    ],
+    "likes": 7,
+    "authorsGender": "mix"
+  },
+  {
+    "talkId": "5176901953912832",
+    "title": "Streaming Data Workshop",
+    "description": "arquitecturas real streaming datos necesarias cubrir necesidades actuales usuarios, especialmente revolución smartphones iot. implementar comprender tipo arquitectura datos fluyen permanencia, análisis búsquedas real, escalable robusta claves creación servicios aplicaciones calidad. emergencia diversas tecnologías facilitan implementación, ecosistema amplio. taller, veremos implementar arquitectura tipo utilizando frameworks reactivos open-source. capas arquitectura streaming, siguientes : * capa recolecta datos * capa transporte datos * capa análisis datos * capa datos memoria / disco * capa acceso datos 2h workshop todo, capas transporte, análisis datos cliente estarán implementados. introducción teórica, centraremos : * implementación servicios vert.x recolecta datos. * guardar datos analizados memoria gracias infinispan * búsquedas continuo memoria accesibles usuario (cliente web) * desplegar arquitectura openshift, infraestructura basada docker kubernetes, portabilidad escalabilidad ilimitada nivel **java** debutante requerido arquitectura usando **infinispan**, **vert.x**, **openshift** más. ",
+    "authors": [
+      {
+        "id": 33724002,
+        "uuid": "katiaaresti",
+        "name": "Katia Aresti",
+        "avatar": "https://storage.googleapis.com/k-avatars/33724002-0ba7833b",
+        "description": "Red Hat, Duchess France, Infinispan/JBoss DataGrid core developer",
+        "feedback": {
+          "ratingAverage": 4.88,
+          "entriesCount": 58
+        },
+        "gender": "Female"
+      },
+      {
+        "id": 40114001,
+        "uuid": "galder",
+        "name": "Galder Zamarreño",
+        "avatar": "https://storage.googleapis.com/k-avatars/40114001-172645e4",
+        "description": "Red Hat, Infinispan/JBoss DataGrid Co-creator and  core developer ",
+        "feedback": {
+          "ratingAverage": 0,
+          "entriesCount": 0
+        },
+        "gender": "Male"
+      },
+      {
+        "id": 109554004,
+        "uuid": "tsegismont",
+        "name": "Thomas Segismont",
+        "avatar": "https://storage.googleapis.com/k-avatars/109554004-0fb19c8f",
+        "description": "Red Hat, Vert-x Core developer ",
+        "feedback": {
+          "ratingAverage": 0,
+          "entriesCount": 0
+        },
+        "twitterAccount": "tsegismont",
+        "gender": "Male"
+      }
+    ],
+    "tags": [
+      "JAVA and JVM languages"
+    ],
+    "likes": 3,
+    "authorsGender": "mix"
+  }
+]
