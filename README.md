@@ -48,6 +48,7 @@ function myOwnFilter (str) {
   return cad.toLowerCase().split(/\s+/).filter((str) => !stopwords.includes(str)).join(" ");
 }
 let allTalks = Listing.allTalks({
+  fieldNames : ["title", "description"],
   topic : "javascript",
   descFilterCb : [myOwnFilter]
 }).filter(byGender("women"));
