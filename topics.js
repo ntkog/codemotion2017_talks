@@ -5,6 +5,8 @@ const tm = require('text-miner');
 let stopwords_spa = require('./data/stopwords_es.json');
 let stopwords_eng = require('./data/stopwords_en.json');
 const _ = require('lodash');
+const fs = require('fs');
+
 // Detecting Language
 const franc = require('franc');
 
@@ -103,7 +105,8 @@ function summary(params = {}) {
 
   if (conf.toJson) {
 
-    let RESULTS_FILENAME = ["./results/stats" , conf.topic , (conf.hasOwnProperty("gender") ? conf.gender : "ALL"), ".json"].join("_");
+    const FOLDER = "./results";
+    let RESULTS_FILENAME = [`${FOLDER}/stats`, conf.topic , (conf.hasOwnProperty("gender") ? conf.gender : "ALL"), ".json"].join("_");
     let resultObj = {
        meta : {
          talks : conf.hasOwnProperty("gender") ? `(${Talks.length} / ${totalTalks})`: totalTalks,
@@ -117,7 +120,15 @@ function summary(params = {}) {
        },
        data : Talks
     };
-    saveFile(RESULTS_FILENAME,resultObj);
+
+    if (fs.existsSync(FOLDER)) {
+      saveFile(RESULTS_FILENAME,resultObj);
+    } else {
+      console.error(`Have you already created a folder [${FOLDER}] ? `);
+      console.log("Aborting...");
+      process.exit(20);
+    }
+
 
   } else {
    console.log("*".repeat(80));
