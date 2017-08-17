@@ -19,7 +19,7 @@ function byGender (gender = "mix") {
 // saveFile wrapper
 
 function saveFile (filename,obj) {
-  jsonfile.writeFile( RESULTS_FILENAME, obj, {spaces: 2}, function(err) {
+  jsonfile.writeFile( filename, obj, {spaces: 2}, function(err) {
     if(err){
       console.error(err)
     } else {
