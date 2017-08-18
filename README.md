@@ -11,7 +11,7 @@ Just [jsonfile](https://www.npmjs.com/package/jsonfile), for saving the output o
 
 # How to use it
 
-Take a look to [index.js](https://github.com/ntkog/codemotion2017_talks/blob/master/index.js) and [nlp.js](https://github.com/ntkog/codemotion2017_talks/blob/master/nlp.js) .
+Take a look to [examples folder](https://github.com/ntkog/codemotion2017_talks/blob/master/examples/stats.js) and [nlp.js](https://github.com/ntkog/codemotion2017_talks/blob/master/nlp.js) .
 
 You have a good start point to play with the data.
 
