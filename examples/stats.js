@@ -45,7 +45,7 @@ nlp.summary(allTalks,{
 
 let authorsDescription = Listing.allTalks({ fieldNames: ["authors","language","title"] })
    .map((t) => ({
-     description: t.authors.map((author) => author.description).filter((desc) => desc),
+     description: t.authors.map((author) => tools.filters.cleanDescription(author.description)).filter((desc) => desc),
      language : t.language,
      title: t.title
    }));
